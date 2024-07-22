@@ -8,5 +8,11 @@ class Token:
         self.line = line
     
     def __str__(self):
-        return f"{self.t_type} {lexeme} {literal}"
-    
+        return f"{self.t_type} {self.lexeme} {self.literal}"
+
+    def __repr__(self):
+        if self.literal:
+            return f"{self.t_type} VAL={self.literal}"
+        else:
+            return f"{self.t_type}"
+

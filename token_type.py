@@ -25,7 +25,7 @@ class TokenType(Enum):
     LESS_EQUAL = auto()
 
     # Literals
-    IDENTIFIERS = auto()
+    IDENTIFIER = auto()
     STRING = auto()
     NUMBER = auto()
 
